@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    position: sticky;
+    /* position: sticky; */
     align-items: center;
     gap: 20px;
     background: var(--clr--gradient);
@@ -16,7 +16,7 @@ header {
     justify-content: right;
     padding-right: 40px;
     font-size: 20px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 header a {
@@ -25,7 +25,7 @@ header a {
 }
 
 header h1.logo {
-    padding-right: 37%;
+    padding-right: 55%;
     font-size: 30px;
 }
 
@@ -35,23 +35,80 @@ header h1.logo {
 
 
 /* home */
-img{
+img.home {
     width: 40%;
-}
-section div.first{
-    display: flex;
-    gap: 3%;
-    padding: 30px;
-    margin: 30px;
+    padding-left: 60px;
 
 }
-div.text{
+
+section div.first {
+    display: flex;
+    gap: 3%;
+    /* padding: 30px; */
+    /* margin: 30px; */
+    /* padding-top: 50px; */
+
+}
+
+div.text {
     font-size: 20px;
-    padding-top: 30px;
-    padding-right: 30px;
+    padding-top: 150px;
+    padding-right: 90px;
 
 }
 
 
 /* catalog */
+section.catalog {
+    margin: 20px;
 
+}
+section.catalog div.cards{
+    display: grid;
+    grid-template-columns:repeat(3, 33.33%);
+    /* grid-template-areas:
+        'one two three' */
+}
+section.catalog h1 {
+    text-align: center;
+}
+
+section.catalog div.card {
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+section.catalog div.card img {
+    width: 100%;
+    justify-content: center;
+}
+
+section.catalog div.card h2.title{
+    text-align: center;
+}
+
+section.catalog div.card div.bottom{
+    display: inline-block;
+    padding: 5px;
+}
+
+section.catalog div.card div.bottom button {
+padding: 8px 18px;
+font-size: 15px;
+border-radius: 5px;
+display: inline-block;
+/* margin-left: 40px;
+margin-right: 20px; */
+/* justify-content: center; */
+
+}
+
+section.catalog div.card div.bottom h2 {
+    display: inline-block;
+    /* margin-left: 20px;
+    margin-right: 20px; */
+    /* display: flex; */
+    justify-content: right;
+}
